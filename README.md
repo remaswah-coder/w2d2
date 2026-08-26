@@ -1,20 +1,23 @@
-# W2D3 Docker Serving Lab
+# W2D2 & W2D3: LLM Serving Stack & Docker Containerization
 
-AIDC bootcamp: the LLM serving stack each team builds, weeks 2 to 6.
+This repository contains the implementation for wrapping the **Qwen/Qwen2.5-0.5B-Instruct** model behind an OpenAI-compatible FastAPI service (W2D2) and containerizing it for production using Docker (W2D3).
 
-## Overview
-This lab focuses on containerizing and serving applications using Docker, comparing naive approaches with optimized builds for production environments.
+## 🚀 Overview
+- **FastAPI Backend (`/v1/chat/completions`, `/v1/models`, `/health`)**: Exposes the model under a standard OpenAI-compatible schema contract.
+- **Docker Integration**: Containerized environment for robust deployment.
 
-## What is Inside
-* `Dockerfile.naive`: Standard unoptimized Dockerfile for baseline testing.
-* `Dockerfile`: Optimized/slim Dockerfile for production deployment.
-* `app/`: Directory containing the application source code and dependencies.
-* `.dockerignore`: Files and directories to exclude from the Docker build context.
+---
+<img width="2560" height="484" alt="Screenshot 2026-08-27 004059" src="https://github.com/user-attachments/assets/b152ff73-8caf-4f0d-952b-e3de60f5f2f5" />
 
-## Getting Started
-Build the Docker image:
-```bash
-docker build -t llm-serving-app .
+Here is the successful test run using the standard OpenAI client pointing to the local FastAPI server:
 
-Bash
-docker run -p 8000:8000 llm-serving-app
+![Client Test Execution](./Screenshot%202026-08-27%20004059.png)
+
+---
+
+## 🛠️ Getting Started Locally
+
+1. **Create and activate the virtual environment:**
+   ```powershell
+   python -m venv .venv
+   .\.venv\Scripts\Activate
