@@ -9,8 +9,6 @@ This repository contains the implementation for wrapping the **Qwen/Qwen2.5-0.5B
 ---
 <img width="2560" height="484" alt="Screenshot 2026-08-27 004059" src="https://github.com/user-attachments/assets/b152ff73-8caf-4f0d-952b-e3de60f5f2f5" />
 
-Here is the successful test run using the standard OpenAI client pointing to the local FastAPI server:
-
 
 ---
 
