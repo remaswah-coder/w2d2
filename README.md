@@ -12,23 +12,18 @@ This repository contains the implementation for wrapping the **Qwen/Qwen2.5-0.5B
 
 ---
 
+
 ## 🛠️ Getting Started Locally
 
-
-
-1. **Create and activate the virtual environment:**
-   ```powershell
+1. **Create and activate the venv:**
    python -m venv .venv
    .\.venv\Scripts\Activate
-Install dependencies:
 
-PowerShell
-pip install -r requirements.txt
-Run the FastAPI server:
+2. **Install dependencies:**
+   pip install -r requirements.txt
 
-PowerShell
-uvicorn main:app --host 0.0.0.0 --port 8000
-Run the client test:
+3. **Run the FastAPI server:**
+   uvicorn main:app --host 0.0.0.0 --port 8000
 
-PowerShell
-python client_test.py
+4. **Run the client test:**
+   python client_test.py
