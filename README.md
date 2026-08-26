@@ -7,17 +7,20 @@ This repository contains the implementation for wrapping the **Qwen/Qwen2.5-0.5B
 
 ---
 
-<img width="2560" height="484" alt="Screenshot 2026-08-27 004059" src="https://github.com/user-attachments/assets/4842d695-9e2f-4286-aed3-61554dd25b1c" />
+<img width="2560" height="484" alt="Screenshot 2026-08-27 004059" src="https://github.com/user-attachments/assets/af0d4d24-bfa7-4b15-8f49-75567f293632" />
+
 
 ---
 
 ## 🛠️ Getting Started Locally
 
+
+
 1. **Create and activate the virtual environment:**
    ```powershell
    python -m venv .venv
    .\.venv\Scripts\Activate
-Install dependencies (pinned per requirements):
+Install dependencies:
 
 PowerShell
 pip install -r requirements.txt
